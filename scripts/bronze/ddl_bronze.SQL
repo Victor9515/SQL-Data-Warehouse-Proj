@@ -33,6 +33,7 @@ CREATE TABLE bronze.crm_prd_info(
 	prd_line NVARCHAR(50),
 	prd_start_dt DATETIME,
 	prd_end_dt DATETIME
+    dwh_createdate_date DATETIME2 DEFAULT GETDATE()
 );
 
 IF OBJECT_ID ('bronze.crm_sales_details','U') IS NOT NULL
